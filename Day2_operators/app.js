@@ -1,21 +1,12 @@
-module.exports = (mealCost, tipPercent, taxPercent) => {
-        const cost = mealCost
-        const tip = tipPercent
-        const tax = taxPercent
-    }
-class operators {
-    constructor(mealCost, tipPercent, taxPercent) {
 
-        this.mealCost = mealCost
-        this.tipPercent = tipPercent
-        this.taxPercent = taxPercent
-
-    }
-
-    print(res) {
-        return (x ^ this.lastAnswer) % this.N
-    }
-
+function mealCost(mealCost, tipPercent, taxPercent){
+    // Write your code here
+        const tip = mealCost*tipPercent/100
+        const tax = mealCost*taxPercent/100
+        const MealCost = Math.round(mealCost+tip+tax)
+        
+      // Use console.log() to print to stdout
+        console.log(`The total meal cost is ${MealCost} dollars.`)
 }
 
-module.exports = operators
+mealCost(12.00, 20, 8)
