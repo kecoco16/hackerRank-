@@ -1,4 +1,4 @@
-function Person(initialAge){
+function main(initialAge){
     // Add some more code to run some checks on initialAge
     let age = initialAge
     this.amIOld=function(){

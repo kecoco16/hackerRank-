@@ -1,5 +1,5 @@
 
-function mealCost(mealCost, tipPercent, taxPercent){
+function main(mealCost, tipPercent, taxPercent){
     // Write your code here
         const tip = mealCost*tipPercent/100
         const tax = mealCost*taxPercent/100
@@ -9,4 +9,4 @@ function mealCost(mealCost, tipPercent, taxPercent){
         console.log(`The total meal cost is ${MealCost} dollars.`)
 }
 
-mealCost(12.00, 20, 8)
+main(12.00, 20, 8)

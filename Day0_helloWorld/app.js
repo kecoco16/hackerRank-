@@ -1,4 +1,4 @@
-function processData(inputString) {
+function main(inputString) {
     // This line of code prints the first line of output
     console.log("Hello, World.");
     
@@ -6,4 +6,4 @@ function processData(inputString) {
     console.log(inputString)
 } 
 
-processData('Welcome to 30 Days of Code!')
+main('Welcome to 30 Days of Code!')
