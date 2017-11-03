@@ -2,8 +2,8 @@
     const dates = input.split("\n")
     const date = dates[0].split(" ").map(Number)
     const dateExpect = dates[1].split(" ").map(Number)
-    const thisDate = new Date( date[2] , date[1] , date[0] )
-    const expectDate = new Date( dateExpect[2] , dateExpect[1] , dateExpect[0] )
+    const thisDate = new Date(date[2],date[1],date[0])
+    const expectDate = new Date(dateExpect[2],dateExpect[1],dateExpect[0])
     let result = 0
     
     if (thisDate <= expectDate) {
