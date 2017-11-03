@@ -1,1 +1,1 @@
-Ssoluciones para 30 days of code hackerRank
+Soluciones para 30 days of code hackerRank
