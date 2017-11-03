@@ -6,9 +6,9 @@
     const expectDate = new Date( dateExpect[2] , dateExpect[1] , dateExpect[0] )
     let result = 0
     
-    if ( thisDate <= expectDate ){
+    if (thisDate <= expectDate){
         result = 0
-    }else if( date[1] == dateExpect[1]  &&  date[2] == dateExpect[2] ){
+    }else if(date[1] == dateExpect[1]  &&  date[2] == dateExpect[2]){
         result = 15*(date[0] - dateExpect[0])
     }else if(date[2] == dateExpect[2]){
         result = 500*(date[1] - dateExpect[1])
