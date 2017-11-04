@@ -1,10 +1,10 @@
 function main () {
   const N = parseInt(readLine())
-  let arr = []
+  let array = []
   for (let i = 0; i < N; i++) {
-    arr.push(readLine().split(' '))
+    array.push(readLine().split(' '))
   }
-  const arrayOrdenado = arr.sort()
+  const arrayOrdenado = array.sort()
   arrayOrdenado.map((array) => {
     if (array[1].includes('@gmail.com')) {
       console.log(array[0])
