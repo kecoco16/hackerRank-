@@ -1,0 +1,25 @@
+{
+  "name": "hackerrank",
+  "version": "1.0.0",
+  "description": "Solutions of hackerRank 30 days of code",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kecoco16/hackerRank-.git"
+  },
+  "keywords": [
+    "hackerRank"
+  ],
+  "author": "kevin castillo mora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kecoco16/hackerRank-/issues"
+  },
+  "homepage": "https://github.com/kecoco16/hackerRank-#readme",
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
