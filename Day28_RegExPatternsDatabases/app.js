@@ -1,12 +1,17 @@
+function isGmail (email) {
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@gmail.com$/
+  return re.test(email)
+}
+
 function main () {
   const N = parseInt(readLine())
-  let arr = []
+  const array = []
   for (let i = 0; i < N; i++) {
-    arr.push(readLine().split(' '))
+    array.push(readLine().split(' '))
   }
-  const arrayOrdenado = arr.sort()
+  const arrayOrdenado = array.sort()
   arrayOrdenado.map((array) => {
-    if (array[1].includes('@gmail.com')) {
+    if (isGmail(array[1])) {
       console.log(array[0])
     }
   })
