@@ -15,7 +15,7 @@ function day1 () {
   return `${i + integer} ${(d + double).toFixed(1)} ${s} ${string}`
 }
 
-export { 
+export {
   day0,
-  day1 
+  day1
 }

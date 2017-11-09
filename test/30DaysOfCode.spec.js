@@ -4,7 +4,6 @@ import { expect } from 'chai'
 import { day0, day1 } from './main'
 
 describe('30 Days of code', async () => {
-
   it('Day 0 Expect output = Hello, World. Welcome to 30 Days of Code!', async () => {
     const response = await day0('Welcome to 30 Days of Code!')
     expect(response).to.be.an('string')
