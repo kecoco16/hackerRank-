@@ -1,0 +1,17 @@
+'use strict'
+
+import { expect } from 'chai'
+import day3 from './Day3Conditional'
+
+describe('Day 3 conditiona;', () => {
+  it('Expect if n is in the inclusive range of 6 to 20 output = Weird else output = Not Weird, ', () => {
+    const weird = 3
+    const notWeird = 24
+    const responseWeird = day3(weird)
+    const responseNotWeird = day3(notWeird)
+    expect(responseWeird).to.be.an('string')
+    expect(responseWeird).to.be.equal(`Weird`)
+    expect(responseNotWeird).to.be.an('string')
+    expect(responseNotWeird).to.be.equal(`Not Weird`)
+  })
+})
