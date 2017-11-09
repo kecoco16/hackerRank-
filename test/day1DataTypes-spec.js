@@ -3,7 +3,7 @@
 import { expect } from 'chai'
 import day1 from './day1DataTypes'
 
-describe('Day 1 of 30 Days of code Hacker Rank', () => {
+describe('Day 1 data types', () => {
   it('Expect output = 16 8.0 HackerRank is the best place to learn and practice coding!', () => {
     const response = day1()
     expect(response).to.be.an('string')
