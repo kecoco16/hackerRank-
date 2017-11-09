@@ -1,7 +1,7 @@
 'use strict'
 
 import { expect } from 'chai'
-import { day1 } from './main'
+import day1 from './day1'
 
 describe('Day 1 of 30 Days of code Hacker Rank', () => {
   it('Expect output = 16 8.0 HackerRank is the best place to learn and practice coding!', () => {

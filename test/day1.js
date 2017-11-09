@@ -1,7 +1,3 @@
-function day0 (inputString) {
-  return `Hello, World.${inputString}`
-}
-
 function day1 () {
   const i = 4
   const d = 4.0
@@ -15,7 +11,4 @@ function day1 () {
   return `${i + integer} ${(d + double).toFixed(1)} ${s} ${string}`
 }
 
-export {
-  day0,
-  day1
-}
+export default day1
