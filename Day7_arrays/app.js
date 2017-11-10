@@ -4,8 +4,8 @@ function main (numeros) {
   arr = arr.map(Number)
   let result = ''
   arr = arr.reverse()
-    .map(letra => {
-      result += `${letra} `
+    .map(number => {
+      result += `${number}`
     })
   console.log(result)
 }
