@@ -3,8 +3,8 @@
 import { expect } from 'chai'
 import day5 from './Day5Loop'
 
-describe('Day 5 test', () => {
-  it('test', () => {
+describe('Day 5 loop', () => {
+  it('Should a multiplication list of a number', () => {
     const input = 2
     const outputs = [
       `${input} x ${1} = ${input * 1}`,

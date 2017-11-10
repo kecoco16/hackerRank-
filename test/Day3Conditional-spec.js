@@ -3,8 +3,8 @@
 import { expect } from 'chai'
 import day3 from './Day3Conditional'
 
-describe('Day 3 conditiona;', () => {
-  it('Expect if n is in the inclusive range of 6 to 20 output = Weird else output = Not Weird, ', () => {
+describe('Day 3 conditional', () => {
+  it('Should Weird if is in the inclusive range of 6 to 20 output or if not should Not Weird', () => {
     const weird = 3
     const notWeird = 24
     const responseWeird = day3(weird)
