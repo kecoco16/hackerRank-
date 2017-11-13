@@ -9,8 +9,6 @@ describe('Day 8 diccionaries maps', () => {
     const output = ['sam=99912222', 'Not found', 'harry=12299933']
     const response = day8(input)
     expect(response).to.be.an('array')
-    for (let i = 0; i < response.length; i++) {
-      expect(response[i]).to.be.equal(output[i])
-    }
+    expect(response).to.be.eql(output)
   })
 })
