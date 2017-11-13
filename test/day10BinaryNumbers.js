@@ -1,5 +1,4 @@
-function day10 (n) {
-  const base2 = n.toString(2).split('')
+const getOutput = base2 => {
   let maxTemp = 0
   let max = 1
   for (let i = 0; i < base2.length; i++) {
@@ -13,6 +12,12 @@ function day10 (n) {
     }
   }
   return maxTemp > max ? maxTemp : max
+}
+
+const day10 = n => {
+  const base2 = n.toString(2).split('')
+  const output = getOutput(base2)
+  return output
 }
 
 export default day10
