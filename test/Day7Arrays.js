@@ -1,4 +1,4 @@
-function day7 (numeros) {
+const day7 = numeros => {
   let n = parseInt(numeros)
   let arr = numeros.split(' ')
   arr = arr.map(Number)

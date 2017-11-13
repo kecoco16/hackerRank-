@@ -1,4 +1,4 @@
-function day6 (input) {
+const day6 = input => {
   const palabras = input.split(' ')
   const cantidad = palabras[0]
   const output = []

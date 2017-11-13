@@ -1,4 +1,4 @@
-function day1 () {
+const day1 = () => {
   const i = 4
   const d = 4.0
   const s = 'HackerRank'
