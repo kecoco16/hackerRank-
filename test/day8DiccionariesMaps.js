@@ -1,4 +1,4 @@
-function Phonebook (input, N) {
+const getPhonebook = (input, N) => {
   const phonebook = []
   for (let i = 0; i < N; i++) {
     const line = input[i + 1].split(' ')
@@ -7,7 +7,7 @@ function Phonebook (input, N) {
   return phonebook
 }
 
-function Output (input, phonebook, N) {
+const getOutput = (input, phonebook, N) => {
   const output = []
   for (let j = N + 1; j < input.length; j++) {
     const name = input[j]
@@ -17,11 +17,11 @@ function Output (input, phonebook, N) {
   return output
 }
 
-function day8 (input) {
-  input = input.split(',')
-  const N = parseInt(input[0])
-  const phonebook = Phonebook(input, N)
-  return Output(input, phonebook, N)
+const day8 = input => {
+  const newInput = input.split(',')
+  const N = parseInt(newInput[0])
+  const phonebook = getPhonebook(newInput, N)
+  return getOutput(newInput, phonebook, N)
 }
 
 export default day8
