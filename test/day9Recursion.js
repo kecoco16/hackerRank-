@@ -1,9 +1,5 @@
-function factorial (n) {
-  return n === 0 ? 1 : (n * (factorial(n - 1)))
-}
+const factorial = n => n === 0 ? 1 : (n * (factorial(n - 1)))
 
-function day9 (n) {
-  return factorial(n)
-}
+const day9 = n => factorial(n)
 
 export default day9
