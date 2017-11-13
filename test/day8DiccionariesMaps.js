@@ -1,5 +1,5 @@
 function Phonebook (input, N) {
-  let phonebook = []
+  const phonebook = []
   for (let i = 0; i < N; i++) {
     const line = input[i + 1].split(' ')
     phonebook[line[0]] = line[1]
