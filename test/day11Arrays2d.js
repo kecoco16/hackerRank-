@@ -1,10 +1,5 @@
 const getArray = input => {
-  const arr = []
-  for (let i = 0; i < 6; i++) {
-    arr[i] = input[i].split(' ')
-    arr[i] = arr[i].map(Number)
-  }
-  return arr
+  return input.map(value => value.split(' ').map(Number))
 }
 
 const getMayor = arr => {
