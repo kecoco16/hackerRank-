@@ -1,7 +1,8 @@
 function main (n) {
-  var arr = []
+  const newN = n.split(',')
+  const arr = []
   for (arr_i = 0; arr_i < 6; arr_i++) {
-    arr[arr_i] = n.split(' ')
+    arr[arr_i] = newN[arr_i].split(' ')
     arr[arr_i] = arr[arr_i].map(Number)
   }
   let suma = 0
@@ -14,3 +15,6 @@ function main (n) {
   }
   console.log(mayor)
 }
+
+const n = `1 1 1 0 0 0,0 1 0 0 0 0,1 1 1 0 0 0,0 0 2 4 4 0,0 0 0 2 0 0,0 0 1 2 4 0`
+main(n)
