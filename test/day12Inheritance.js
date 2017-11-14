@@ -6,10 +6,7 @@ class Person {
   }
 
   printPerson () {
-    console.log(
-      'Name: ' + this.lastName + ', ' + this.firstName +
-      '\nID: ' + this.idNumber
-    )
+    return `firstName:${this.firstName} lastName:${this.lastName} ID:${this.idNumber}`
   }
 }
 
@@ -36,6 +33,4 @@ class Student extends Person {
   }
 }
 
-let s = new Student('kevin', 'castillo', 1, [54])
-s.printPerson()
-console.log('Grade: ' + s.calculate())
+export default Student
