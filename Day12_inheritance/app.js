@@ -1,3 +1,18 @@
+class Person {
+  constructor (firstName, lastName, identification) {
+    this.firstName = firstName
+    this.lastName = lastName
+    this.idNumber = identification
+  }
+
+  printPerson () {
+    console.log(
+      'Name: ' + this.lastName + ', ' + this.firstName +
+      '\nID: ' + this.idNumber
+    )
+  }
+}
+
 class Student extends Person {
   constructor (firstName, lastName, id, scores) {
     super(firstName, lastName, id)
@@ -20,3 +35,7 @@ class Student extends Person {
     return 'O'
   }
 }
+
+let s = new Student('kevin', 'castillo', 1, [54])
+s.printPerson()
+console.log('Grade: ' + s.calculate())
