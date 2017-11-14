@@ -11,7 +11,6 @@ describe('Day 13 abstract classes', () => {
     const book = new myBook(title, author, price)
     const showInformation = book.display()
     expect(showInformation).to.be.an('string')
-    console.log(showInformation)
     expect(showInformation).to.be.eql(`Title:${title} Author:${author} Price:${price}`)
   })
 })
