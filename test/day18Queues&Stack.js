@@ -1,11 +1,11 @@
-function Solution () {
-  this.stack = []
-  this.queue = []
+const Solution = () => {
+  const stack = []
+  const queue = []
 
-  Solution.prototype.pushCharacter = this.stack.push
-  Solution.prototype.popCharacter = this.stack.pop
-  Solution.prototype.enqueueCharacter = this.queue.push
-  Solution.prototype.dequeueCharacter = this.queue.shift
+  Solution.prototype.pushCharacter = stack.push
+  Solution.prototype.popCharacter = stack.pop
+  Solution.prototype.enqueueCharacter = queue.push
+  Solution.prototype.dequeueCharacter = queue.shift
 }
 
 const getSolution = (s) => {
