@@ -1,7 +1,7 @@
 'use strict'
 
 import { expect } from 'chai'
-import day2 from './Day2Operators'
+import day2 from './day2Operators'
 
 describe('Day 2 operators', () => {
   it('Expect output = The total meal cost is 15 dollars.', () => {

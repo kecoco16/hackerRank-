@@ -1,7 +1,7 @@
 'use strict'
 
 import { expect } from 'chai'
-import day3 from './Day3Conditional'
+import day3 from './day3Conditional'
 
 describe('Day 3 conditional', () => {
   it('Should Weird if is in the inclusive range of 6 to 20 output or if not should Not Weird', () => {
