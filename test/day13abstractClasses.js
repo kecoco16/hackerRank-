@@ -3,10 +3,6 @@ class book {
     this.title = title
     this.author = author
   }
-
-  display () {
-    console.log('Implement the \'display\' method!')
-  }
 }
 
 class myBook extends book {
