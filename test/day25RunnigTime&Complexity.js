@@ -1,14 +1,14 @@
-const prime = n => {
+const isPrime = n => {
   if (n < 2) {
-    return 'Not prime'
+    return false
   }
   const raiz = Math.sqrt(n)
   for (let i = 2; i <= raiz; i++) {
     if (n % i === 0) {
-      return 'Not prime'
+      return false
     }
   }
-  return 'Prime'
+  return true
 }
 
 const main = input => {
@@ -18,7 +18,9 @@ const main = input => {
     return
   }
   const output = []
-  array.map(n => output.push(prime(n)))
+  array.map(n => {
+    isPrime(n) === true ? output.push('Prime') : output.push('Not prime')
+  })
   return output
 }
 
