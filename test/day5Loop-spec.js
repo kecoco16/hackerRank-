@@ -1,7 +1,7 @@
 'use strict'
 
 import { expect } from 'chai'
-import day5 from './Day5Loop'
+import day5 from './day5Loop'
 
 describe('Day 5 loop', () => {
   it('Should a multiplication list of a number', () => {
