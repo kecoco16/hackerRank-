@@ -1,11 +1,7 @@
 class book {
   constructor (title, author) {
-    if (this.constructor === book) {
-      throw new TypeError('Do not attempt to directly instantiate an abstract class.')
-    } else {
-      this.title = title
-      this.author = author
-    }
+    this.title = title
+    this.author = author
   }
 
   display () {
