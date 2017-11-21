@@ -20,15 +20,15 @@ class Student extends Person {
     const suma = this.scores.reduce((anterior, actual) => anterior + actual, 0)
     const promedio = suma / this.scores.length
 
-    if (promedio < 40) return 'T'
+    if (promedio < 40) { return 'T' }
 
-    if (promedio < 55) return 'D'
+    if (promedio < 55) { return 'D' }
 
-    if (promedio < 70) return 'P'
+    if (promedio < 70) { return 'P' }
 
-    if (promedio < 80) return 'A'
+    if (promedio < 80) { return 'A' }
 
-    if (promedio < 90) return 'E'
+    if (promedio < 90) { return 'E' }
 
     return 'O'
   }
