@@ -1,12 +1,9 @@
 function main (numeros) {
-  let n = parseInt(numeros)
-  arr = numeros.split(' ')
-  arr = arr.map(Number)
+  const arr = numeros.split(' ').map(Number)
   let result = ''
-  arr = arr.reverse()
-    .map(number => {
-      result += `${number}`
-    })
+  arr.reverse().map(number => {
+    result += `${number}`
+  })
   console.log(result)
 }
 

@@ -7,3 +7,5 @@ function main () {
   main.prototype.enqueueCharacter = this.queue.push
   main.prototype.dequeueCharacter = this.queue.shift
 }
+
+main()

@@ -1,8 +1,6 @@
-function main (initialAge) {
-    // Add some more code to run some checks on initialAge
+function Person (initialAge) {
   let age = initialAge
   this.amIOld = function () {
-        // Do some computations in here and print out the correct statement to the console
     if (age <= 12 && age >= 0) {
       console.log('You are young.')
     } else if (age <= 17 && age >= 13) {
@@ -16,7 +14,9 @@ function main (initialAge) {
     }
   }
   this.yearPasses = function () {
-        // Increment the age of the person in here
     age++
   }
 }
+
+const p = new Person(4)
+p.amIOld()

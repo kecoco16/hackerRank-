@@ -1,8 +1,7 @@
 
 function main (x) {
-  var n = parseInt(x)
-  a = x.split(' ')
-  a = a.map(Number)
+  const n = parseInt(x)
+  const a = x.split(' ').map(Number)
 
   let movimientos = 0
 

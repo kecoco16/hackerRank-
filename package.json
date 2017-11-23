@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "Solutions of hackerRank 30 days of code",
   "main": "index.js",
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
+  },
   "scripts": {
     "lint": "standard",
-    "test": "mocha --compilers js:babel-core/register ./test/**/*-spec.js"
+    "test": "standard & mocha --compilers js:babel-core/register ./test/**/*-spec.js"
   },
   "repository": {
     "type": "git",

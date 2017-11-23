@@ -1,9 +1,9 @@
 function main (n) {
   const newN = n.split(',')
   const arr = []
-  for (arr_i = 0; arr_i < 6; arr_i++) {
-    arr[arr_i] = newN[arr_i].split(' ')
-    arr[arr_i] = arr[arr_i].map(Number)
+  for (let i = 0; i < 6; i++) {
+    arr[i] = newN[i].split(' ')
+    arr[i] = arr[i].map(Number)
   }
   let suma = 0
   let mayor = -999999
