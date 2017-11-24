@@ -1,7 +1,7 @@
 function main (input) {
   const array = input.split('\n')
   const testCases = array.shift()
-  if (testCases == 0) {
+  if (testCases === 0) {
     return
   }
   array.map(n => {

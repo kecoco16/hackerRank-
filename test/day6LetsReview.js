@@ -9,7 +9,7 @@ const day6 = input => {
     const letras = palabra.split('')
 
     for (let j = 0; j < palabra.length; j++) {
-      if (j % 2 == 0) {
+      if (j % 2 === 0) {
         par += letras[j]
       } else {
         impar += letras[j]
