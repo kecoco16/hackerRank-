@@ -8,7 +8,6 @@ describe('Day 26 nested logic', () => {
     const input = `6 6 2015 - 9 6 2015`
     const output = 0
     const response = main(input)
-    console.log(response)
     expect(response).to.be.an('number')
     expect(response).to.be.equal(output)
   })
@@ -33,7 +32,6 @@ describe('Day 26 nested logic', () => {
     const input = `6 7 2017 - 6 6 2015`
     const output = 10000
     const response = main(input)
-    console.log(response)
     expect(response).to.be.an('number')
     expect(response).to.be.equal(output)
   })
