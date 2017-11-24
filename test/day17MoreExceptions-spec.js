@@ -9,7 +9,7 @@ describe('Day 17 more exceptions', () => {
     const p = -6
     const positive = power(n, n)
     const negative = power(n, p)
-    
+
     expect(positive).to.be.an('number')
     expect(positive).to.be.equal(Math.pow(n, n))
     expect(negative).to.be.an('string')

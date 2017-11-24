@@ -15,7 +15,7 @@ class Student extends Person {
     super(firstName, lastName, id)
     this.scores = scores
   }
-  
+
   calculate () {
     const suma = this.scores.reduce((anterior, actual) => anterior + actual, 0)
     const promedio = suma / this.scores.length
