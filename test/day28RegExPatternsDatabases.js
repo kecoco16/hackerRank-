@@ -4,7 +4,7 @@ function isGmail (email) {
 }
 
 function main (array) {
-  const emails = array
+  const emails = array.sort()
   const response = []
   emails.map((email) => {
     if (isGmail(email[1])) {
