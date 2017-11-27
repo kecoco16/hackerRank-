@@ -11,13 +11,14 @@ const dateExpects = (dates) => {
 const result = dates => {
   if (dates[1] <= dates[3]) {
     return 0
-  } else if (dates[0][1] === dates[2][1] && dates[0][2] === dates[2][2]) {
-    return 15 * (dates[0][0] - dates[2][0])
-  } else if (dates[0][2] === dates[2][2]) {
-    return 500 * (dates[0][1] - dates[2][1])
-  } else {
-    return 10000
   }
+  if (dates[0][1] === dates[2][1] && dates[0][2] === dates[2][2]) {
+    return 15 * (dates[0][0] - dates[2][0])
+  }
+  if (dates[0][2] === dates[2][2]) {
+    return 500 * (dates[0][1] - dates[2][1])
+  }
+  return 10000
 }
 
 const main = input => {
