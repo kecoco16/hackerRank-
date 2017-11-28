@@ -1,16 +1,25 @@
-function isGmail (email) {
-  var re = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\\.,;:\s@"]+)*)|(".+"))@gmail.com$/
-  return re.test(email)
+const regExp = email => {
+  const regEx = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\\.,;:\s@"]+)*)|(".+"))@gmail.com$/
+  return regEx.test(email)
 }
 
-function main () {
-  const array = [['riya', 'riya@gmail.com'], ['julia', 'julia@julia.me'], ['julia', 'sjulia@gmail.com']]
-  const arrayOrdenado = array.sort()
-  arrayOrdenado.map((array) => {
-    if (isGmail(array[1])) {
-      console.log(array[0])
-    }
-  })
+const isGmail = (email) => {
+  return regExp(email[1])
 }
 
-main()
+const main = array => {
+  const emails = array.sort()
+  const gmail = emails.filter(isGmail).map(email => email[0])
+  console.log(gmail)
+}
+
+const input = [
+  ['riya', 'riya@gmail.com'],
+  ['julia', 'julia@julia.me'],
+  ['julia', 'sjulia@gmail.com'],
+  ['julia', 'julia@gmail.com'],
+  ['samantha', 'samantha@gmail.com'],
+  ['tanya', 'tanya@gmail.com']
+]
+
+main(input)

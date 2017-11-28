@@ -1,17 +1,12 @@
-function isGmail (email) {
-  const regEx = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\\.,;:\s@"]+)*)|(".+"))@gmail.com$/
-  return regEx.test(email)
+const regEx = email => {
+  const gmail = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\\.,;:\s@"]+)*)|(".+"))@gmail.com$/
+  return gmail.test(email[1])
 }
 
-function main (array) {
+const main = array => {
   const emails = array.sort()
-  const response = []
-  emails.map((email) => {
-    if (isGmail(email[1])) {
-      response.push(email[0])
-    }
-  })
-  return response
+  const gmail = emails.filter(regEx).map(email => email[0])
+  return gmail
 }
 
 export default main
