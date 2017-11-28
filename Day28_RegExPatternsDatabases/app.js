@@ -1,15 +1,11 @@
 const regExp = email => {
   const regEx = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\\.,;:\s@"]+)*)|(".+"))@gmail.com$/
-  return regEx.test(email)
-}
-
-const isGmail = (email) => {
-  return regExp(email[1])
+  return regEx.test(email[1])
 }
 
 const main = array => {
   const emails = array.sort()
-  const gmail = emails.filter(isGmail).map(email => email[0])
+  const gmail = emails.filter(regExp).map(email => email[0])
   console.log(gmail)
 }
 
