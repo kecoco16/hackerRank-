@@ -2,8 +2,7 @@
 function main (n) {
   const N = parseInt(n)
   if ((N % 2 === 1 || N >= 6) && (N <= 20)) {
-    console.log('Weird')
-    return
+    return console.log('Weird')
   }
   console.log('Not Weird')
 }
