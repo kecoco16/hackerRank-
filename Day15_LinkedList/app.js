@@ -9,7 +9,7 @@ function Solution () {
       return new Node(data)
     }
 
-    var tmp = head
+    let tmp = head
     while (tmp.next != null) {
       tmp = tmp.next
     }

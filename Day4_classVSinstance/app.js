@@ -2,16 +2,17 @@ function Person (initialAge) {
   let age = initialAge
   this.amIOld = function () {
     if (age <= 12 && age >= 0) {
-      console.log('You are young.')
-    } else if (age <= 17 && age >= 13) {
-      console.log('You are a teenager.')
-    } else if (age >= 18) {
-      console.log('You are old.')
-    } else {
-      console.log('Age is not valid, setting age to 0.')
-      age = 0
-      this.amIOld()
+      return console.log('You are young.')
     }
+    if (age <= 17 && age >= 13) {
+      return console.log('You are a teenager.')
+    }
+    if (age >= 18) {
+      return console.log('You are old.')
+    }
+    age = 0
+    this.amIOld()
+    return console.log('Age is not valid, setting age to 0.')
   }
   this.yearPasses = function () {
     age++
