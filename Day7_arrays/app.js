@@ -1,4 +1,4 @@
-function main (numeros) {
+const main = numeros => {
   const arr = numeros.split(' ').map(Number)
   let result = ''
   arr.reverse().map(number => {

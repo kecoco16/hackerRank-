@@ -30,7 +30,9 @@ const main = x => {
   const array = x.split(' ').map(Number)
   const length = array.length
   const result = getResult(length, array)
-  return `Array is sorted in ${result.moves} swaps. First Element: ${result.orderArray[0]} Last Element: ${result.orderArray[length - 1]}`
+  return `Array is sorted in ${result.moves} swaps. First Element: ${
+    result.orderArray[0]
+  } Last Element: ${result.orderArray[length - 1]}`
 }
 
 export default main
