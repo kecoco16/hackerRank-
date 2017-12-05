@@ -1,4 +1,4 @@
-function main (n) {
+const main = n => {
   const newN = n.split(',')
   const arr = []
   for (let i = 0; i < 6; i++) {
