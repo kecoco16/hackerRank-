@@ -2,17 +2,6 @@
   "name": "hackerrank",
   "version": "1.0.0",
   "description": "Solutions of hackerRank 30 days of code",
-  "main": "index.js",
-  "standard": {
-    "globals": [
-      "describe",
-      "it"
-    ]
-  },
-  "scripts": {
-    "lint": "standard",
-    "test": "standard & mocha --compilers js:babel-core/register ./test/**/*-spec.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kecoco16/hackerRank-.git"
@@ -29,13 +18,35 @@
     "url": "https://github.com/kecoco16/hackerRank-/issues"
   },
   "homepage": "https://github.com/kecoco16/hackerRank-#readme",
+  "dependencies": {},
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "chai": "^4.1.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
     "mocha": "^4.0.1",
+    "prettier": "^1.9.0",
     "standard": "^10.0.3"
   },
-  "dependencies": {}
+ "scripts": {
+    "lint": "prettier --single-quote --trailing-comma es5 --write **/*.js & standard --fix",
+    "test": "npm run lint & mocha --compilers js:babel-core/register ./test/**/*-spec.js",
+    "precommit": "lint-staged"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "prettier --single-quote --trailing-comma es5 --write",
+      "standard --fix", 
+      "git add"
+    ]
+  } 
 }
+ 
