@@ -1,4 +1,4 @@
-const dateExpects = (dates) => {
+const dateExpects = dates => {
   const output = []
   dates.map(date => {
     const test = date.split(' ').map(Number)
