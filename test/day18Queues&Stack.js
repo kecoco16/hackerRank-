@@ -8,7 +8,7 @@ const Solution = () => {
   Solution.prototype.dequeueCharacter = queue.shift
 }
 
-const getSolution = (s) => {
+const getSolution = s => {
   const obj = new Solution()
   for (let i = 0; i < s.length; i++) {
     obj.pushCharacter(s.charAt(i))
@@ -25,7 +25,9 @@ const result = (s, obj) => {
       break
     }
   }
-  return isPalindrome ? `The word, ${s}, is a palindrome.` : `The word, ${s}, is not a palindrome.`
+  return isPalindrome
+    ? `The word, ${s}, is a palindrome.`
+    : `The word, ${s}, is not a palindrome.`
 }
 
 const main = str => {
