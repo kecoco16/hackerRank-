@@ -1,4 +1,4 @@
-function main (input) {
+const main = input => {
   input = input.split('\n')
   const N = parseInt(input[0])
   let phonebook = []

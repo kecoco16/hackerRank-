@@ -1,4 +1,4 @@
-function main (n) {
+const main = n => {
   const base2 = n.toString(2).split('')
   let maxTemp = 0
   let max = 1

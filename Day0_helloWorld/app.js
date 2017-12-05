@@ -1,4 +1,4 @@
-function main (inputString) {
+const main = inputString => {
   console.log('Hello, World.')
   console.log(inputString)
 }

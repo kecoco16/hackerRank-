@@ -1,4 +1,4 @@
-function main (input) {
+const main = input => {
   const palabras = input.split('\n')
   const cantidad = palabras[0]
 

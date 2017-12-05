@@ -1,4 +1,4 @@
-function main () {
+const main = () => {
   const i = 4
   const d = 4.0
   const s = 'HackerRank'
