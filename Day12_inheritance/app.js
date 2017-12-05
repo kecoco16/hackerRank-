@@ -7,7 +7,9 @@ class Person {
 
   printPerson () {
     console.log(
-      `firstName:${this.firstName} lastName:${this.lastName} ID:${this.idNumber}`
+      `firstName:${this.firstName} 
+      lastName:${this.lastName} 
+      ID:${this.idNumber}`
     )
   }
 }
