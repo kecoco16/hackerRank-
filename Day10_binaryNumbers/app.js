@@ -3,7 +3,10 @@ function main (n) {
   let maxTemp = 0
   let max = 1
   for (let i = 0; i < base2.length; i++) {
-    if ((base2[i] === 1 && base2[i + 1] === 1) || (base2[i] === 1 && base2[i - 1] === 1)) {
+    if (
+      (base2[i] === 1 && base2[i + 1] === 1) ||
+      (base2[i] === 1 && base2[i - 1] === 1)
+    ) {
       maxTemp += 1
     } else if (maxTemp > max) {
       max = maxTemp

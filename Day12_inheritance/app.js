@@ -7,8 +7,12 @@ class Person {
 
   printPerson () {
     console.log(
-      'Name: ' + this.lastName + ', ' + this.firstName +
-      '\nID: ' + this.idNumber
+      'Name: ' +
+        this.lastName +
+        ', ' +
+        this.firstName +
+        '\nID: ' +
+        this.idNumber
     )
   }
 }

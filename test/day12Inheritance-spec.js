@@ -13,7 +13,9 @@ describe('Day 12 inheritance', () => {
     const printStudent = student.printPerson()
     const average = student.calculate()
     expect(printStudent).to.be.an('string')
-    expect(printStudent).to.be.eql(`firstName:${firstName} lastName:${lastName} ID:${id}`)
+    expect(printStudent).to.be.eql(
+      `firstName:${firstName} lastName:${lastName} ID:${id}`
+    )
     expect(average).to.be.an('string')
     expect(average).to.be.eql('O')
   })

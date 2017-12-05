@@ -1,4 +1,3 @@
-
 function main (x) {
   const n = parseInt(x)
   const a = x.split(' ').map(Number)

@@ -11,7 +11,7 @@ const getOutput = (input, phonebook, N) => {
   const output = []
   for (let j = N + 1; j < input.length; j++) {
     const name = input[j]
-    const num = (phonebook[name])
+    const num = phonebook[name]
     output.push(num ? `${name}=${num}` : `Not found`)
   }
   return output
